@@ -25,12 +25,22 @@ function my_login_logo_url_title() {
 }
 
 function base_assets() {
-	wp_enqueue_style( 'montserrat-google-font', 'https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=cyrillic,cyrillic-ext,latin,latin-ext,vietnamese' );
-	wp_enqueue_style( 'fira-sans-google-font', 'https://fonts.googleapis.com/css?family=Fira+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese' );
-	wp_enqueue_style( 'normalize-styles', get_template_directory_uri() . '/assets/css-min/normalize.min.css' );
-    wp_enqueue_style( 'base-styles', get_template_directory_uri() . '/assets/css-min/base.css' );
-    wp_enqueue_style( 'fonts-styles', get_template_directory_uri() . '/assets/css-min/fonts.min.css' );
-    wp_enqueue_script( 'disable-right-click', get_template_directory_uri() . '/assets/js-min/disable-right-click.js', array(), false, true);
+    if ( is_page_template( 'page-index.php' ) ) {
+
+        wp_enqueue_style( 'redesign-styles', get_template_directory_uri() . '/assets/css-min/styles.min.css' );
+        wp_enqueue_style( 'owl-styles', get_template_directory_uri() . '/assets/libs-min/owl.carousel.min.css' );
+        
+        wp_deregister_script('jquery');
+        wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
+        wp_enqueue_script( 'owl-scripts', get_template_directory_uri() . '/assets/libs-min/owl.carousel.min.js', array('jquery'), false, true);
+    } else {
+        wp_enqueue_style( 'montserrat-google-font', 'https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=cyrillic,cyrillic-ext,latin,latin-ext,vietnamese' );
+        wp_enqueue_style( 'fira-sans-google-font', 'https://fonts.googleapis.com/css?family=Fira+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese' );
+        wp_enqueue_style( 'normalize-styles', get_template_directory_uri() . '/assets/css-min/normalize.min.css' );
+        wp_enqueue_style( 'base-styles', get_template_directory_uri() . '/assets/css-min/base.css' );
+        wp_enqueue_style( 'fonts-styles', get_template_directory_uri() . '/assets/css-min/fonts.min.css' );
+        wp_enqueue_script( 'disable-right-click', get_template_directory_uri() . '/assets/js-min/disable-right-click.js', array(), false, true);
+    }
 }
 
 add_action( 'wp_enqueue_scripts', 'base_assets' );

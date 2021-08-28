@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="9px" viewBox="0 0 10 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>dropddown-icon</title>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gallery-Page" transform="translate(-637.000000, -223.000000)" fill="#011437">
+            <g id="gallery-search-wrapper" transform="translate(100.000000, 186.000000)">
+                <g id="gallery-search-field" transform="translate(327.000000, 10.000000)">
+                    <g id="Group-14" transform="translate(130.000000, 19.000000)">
+                        <path d="M85.8944272,9.78885438 L89.2763932,16.5527864 C89.5233825,17.0467649 89.3231581,17.6474379 88.8291796,17.8944272 C88.6903242,17.9638549 88.5372111,18 88.381966,18 L81.618034,18 C81.0657492,18 80.618034,17.5522847 80.618034,17 C80.618034,16.8447549 80.6541791,16.6916418 80.7236068,16.5527864 L84.1055728,9.78885438 C84.3525621,9.29487588 84.9532351,9.09465154 85.4472136,9.34164079 C85.640741,9.43840449 85.7976635,9.59532698 85.8944272,9.78885438 Z" id="dropddown-icon" transform="translate(85.000000, 13.000000) rotate(-180.000000) translate(-85.000000, -13.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -23,8 +23,14 @@
 			bloginfo( 'name' ); ?>			
 		</title>
 
+		<!-- Bebas font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
 	    <!--=== LINK TAGS ===-->
-	    <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/assets/images/default/logo.png" type="image/png" />
+	    <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/assets/images/favicon.png" type="image/png" />
+	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri() ?>/assets/images/favicon-96.png"/>
 	    <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS2 Feed" href="<?php bloginfo('rss2_url'); ?>" />
 	    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 

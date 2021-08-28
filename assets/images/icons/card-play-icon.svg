@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>card-play-icon</title>
+    <defs>
+        <path d="M46.0869968,19.1739936 L52.3115841,31.6231683 C52.8878924,32.7757848 52.4207022,34.1773552 51.2680857,34.7536634 C50.9440897,34.9156615 50.5868259,35 50.2245874,35 L37.7754126,35 C36.4867482,35 35.4420793,33.9553311 35.4420793,32.6666667 C35.4420793,32.3044281 35.5264179,31.9471643 35.6884159,31.6231683 L41.9130032,19.1739936 C42.4893115,18.0213771 43.8908819,17.5541869 45.0434984,18.1304952 C45.4950623,18.3562771 45.8612148,18.7224296 46.0869968,19.1739936 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-Dev-Ready" transform="translate(-1138.000000, -1437.000000)">
+            <g id="recent-card" transform="translate(950.000000, 1320.000000)">
+                <g id="card-play-button" transform="translate(154.000000, 101.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="card-play-icon" fill="#0F56F6" transform="translate(44.000000, 25.000000) rotate(-270.000000) translate(-44.000000, -25.000000) " xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
