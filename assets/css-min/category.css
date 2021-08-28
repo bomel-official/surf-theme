@@ -1,0 +1,186 @@
+section.cat-content {
+  padding: 85px 0 140px;
+  font-size: 1.5rem;
+}
+section.cat-content .headings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 45px;
+}
+section.cat-content .headings h1,
+section.cat-content .headings h3 {
+  font-family: Montserrat;
+  font-size: 4.8rem;
+  font-weight: bold;
+  letter-spacing: 0.12rem;
+  text-align: left;
+  color: #040404;
+}
+section.cat-content .headings h3 {
+    text-transform: uppercase;
+}
+section.cat-content .filters-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 70px;
+}
+section.cat-content .filters-block .custom-fill-btn {
+  background: linear-gradient(to right bottom, #FD772E, #FEE844);
+  font-family: Corbel;
+  font-size: 3rem;
+  line-height: 3rem;
+  border-radius: 10px;
+  letter-spacing: 0.03rem;
+  color: #040404;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  border: none;
+}
+section.cat-content .filters-block .custom-fill-btn:hover {
+  background: linear-gradient(to right bottom, #FD772E, #E4D03A);
+}
+section.cat-content .filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+section.cat-content .filters .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 45px;
+}
+section.cat-content .filters .filter.from {
+    margin-right: 20px;
+}
+section.cat-content .filters .filter label {
+  font-family: Corbel;
+  font-size: 2rem;
+  font-style: italic;
+  letter-spacing: 0.05rem;
+  color: #040404;
+}
+section.cat-content .filters .filter select, section.cat-content .filters .filter input {
+  font-family: Fira Sans;
+  font-size: 1.2rem;
+  letter-spacing: 0.03rem;
+  color: #040404;
+  padding: 12px 15px;
+  cursor: pointer;
+}
+section.cat-content .images .images-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+section.cat-content .images .images-list .image-element {
+  margin-bottom: 50px;
+  text-align: left;
+}
+section.cat-content .images .images-list .image-element a.to-image-link.video {
+  position: relative;
+  display: block;
+}
+section.cat-content .images .images-list .image-element a.to-image-link.video::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #000;
+}
+section.cat-content .images .images-list .image-element a.to-image-link.video::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  border-radius: 30px;
+}
+section.cat-content .images .images-list .image-element a.to-image-link {
+  padding-bottom: 75%;
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+}
+section.cat-content .images .images-list .image-element a.to-image-link .image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section.cat-content .images .images-list .image-element span.filename {
+  font-family: Montserrat;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1e252d;
+}
+section.cat-content .images .images-list > * {
+  margin: 0 10px;
+  width: calc(25% - 20px);
+}
+@media screen and (max-device-width: 500px) {
+  section.cat-content .filters-block {
+      align-items: center;
+  }
+  section.cat-content .images .images-list > * {
+    width: 100%;
+  }
+  section.cat-content .filters {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.cat-content .filters .filter {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  section.cat-content .headings {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.cat-content .headings h1 {
+    margin-bottom: 10px;
+  }
+}

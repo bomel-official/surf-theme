@@ -1,0 +1,316 @@
+.general-watermark {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999999999999999999999999999999999999;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    pointer-events: none;
+}
+.general-watermark.full {
+    opacity: 0;
+}
+.content {
+  margin-top: -70px;
+  padding-bottom: 85px;
+}
+.content .headings-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -20px;
+}
+.content .headings-block .filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 30px;
+}
+.content .headings-block .filters .filter {
+  text-align: left;
+  margin-right: 50px;
+}
+.content .headings-block .filters .filter .filter-name {
+  font-family: Corbel;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  color: #040404;
+}
+.content .headings-block .filters .filter .filter-value {
+  font-family: Montserrat;
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 0.085rem;
+  color: #f67379;
+}
+.content .headings-block .categories {
+  text-align: right;
+}
+.content .headings-block .categories .spot {
+  font-family: Montserrat;
+  font-size: 3.6rem;
+  font-weight: bold;
+  letter-spacing: 0.09rem;
+  color: #030303;
+}
+.content .headings-block .categories .type {
+  font-family: Montserrat;
+  font-size: 3.4rem;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 0.085rem;
+  color: #f67379;
+}
+.content .headings-block > * {
+  margin: 0 20px;
+}
+.content .product-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -20px;
+    margin-top: 40px;
+}
+.content .product-content.checkout {
+    font-size: 16px;
+}
+.content .product-content .full-size-image {
+  max-width: calc(60% - 40px);
+  position: relative;
+}
+.content .product-content .video-container .watermark {
+    pointer-events: none;
+}
+.content .product-content .full-size-image .watermark,
+.content .product-content .video-container .watermark{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.content .product-content .full-size-image .main-image {
+  width: 100%;
+}
+.content .product-content .video-container {
+  width: calc(60% - 40px);
+  position: relative;
+}
+.content .product-content .video-container video::-webkit-media-controls-fullscreen-button
+{
+        display: none !important;
+}
+.content .product-content .about-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+.content .product-content .about-image .author-info {
+    margin-bottom: 5rem;
+}
+.content .product-content .about-image .author-info .author-profile{
+    background-color: #dddddd;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .product-content .about-image .author-info .post-date {
+    padding: 3px;
+    background-color: #dddddd;
+    margin-top: 3px;
+    font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.085rem;
+  color: #040404;
+}
+.content .product-content .about-image .author-info .author-profile .avatar {
+    min-width: 5rem;
+    min-height: 5rem;
+    width: 10rem;
+    height: 10rem;
+    max-width: 10rem;
+    max-height: 10rem;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 5rem;
+    margin-right: 10px;
+}
+.content .product-content .about-image .author-info .author-profile .name {
+    font-family: Montserrat;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.085rem;
+  text-align: left;
+  color: #040404;
+  margin-right: 10px;
+}
+.content .product-content .about-image .author-info .author-profile .rating {
+    color: #E7BB0C;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.content .product-content .about-image .author-info .author-profile .name .username {
+    font-weight: bold;
+    color: #4EBB95;
+}
+.content .product-content .about-image.before-payment.active {
+    display: none;
+}
+.content .product-content .about-image.after-payment:not(.active) {
+    display: none;
+}
+.content .product-content .about-image .product-description{
+    font-family: Montserrat;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+  word-break: break-all;
+  text-align: left;
+  margin-bottom: auto;
+}
+.content .product-content .about-image .cta-block .procced-to-payment-block {
+    width: 60%;
+    text-align: left;
+    
+}
+.content .product-content .about-image .cta-block .payment-description {
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.085rem;
+  text-align: left;
+  color: #040404;
+  margin: 10px 10px 0 10px;
+  min-width: 150px;
+  max-width: 100%;
+}
+.content .product-content .about-image .cta-block {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.content .product-content .about-image .cta-block .price {
+  font-family: Montserrat;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.08;
+  text-align: left;
+  color: #5bdaad;
+}
+.content .product-content .about-image .cta-block .download {
+    margin-left: auto;
+}
+.content .product-content .about-image .cta-block .small-fill-btn {
+  background-color: #5bdaae;
+  font-family: Corbel;
+  font-size: 2rem;
+  font-style: italic;
+  line-height: 2rem;
+  border-radius: 10px;
+  letter-spacing: 0.03rem;
+  color: #040404;
+  padding: 6px 40px 10px;
+  min-width: 150px;
+  max-width: 100%;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  border: 1px solid #000;
+  margin: 0 10px;
+}
+.content .product-content .about-image .cta-block .small-fill-btn.danger {
+    background-color: #ff4444;
+}
+.content .product-content .about-image .cta-block .small-fill-btn.danger:hover {
+    background-color: #DB3A3A;
+}
+.content .product-content .about-image .cta-block .small-fill-btn.red {
+  background-color: #f8cae6;
+}
+.content .product-content .about-image .cta-block .small-fill-btn.red:hover {
+  background-color: #DEB5CE;
+}
+.content .product-content .about-image .cta-block .small-fill-btn:hover {
+  background-color: #45A684;
+}
+.content .product-content .about-image.after-payment .payment-description {
+  display: none;
+}
+.content .product-content .about-image.after-payment .price {
+  display: none;
+}
+.content .product-content > * {
+  margin: 0 20px;
+}
+@media screen and (max-device-width: 500px) {
+  section.content {
+    margin-top: 30px;
+  }
+  section.content .headings-block {
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.content .headings-block .filters .filter {
+    margin-right: 20px;
+  }
+  section.content .headings-block .categories {
+    text-align: left;
+  }
+  section.content .product-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 30px;
+  }
+  .content .product-content .video-container {
+      width: calc(100% - 40px);
+  }
+  section.content .product-content a.full-size-image {
+    width: calc(100% - 40px);
+    max-width: 100%;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  section.content .product-content .about-image {
+    margin-top: 30px;
+    width: calc(100% - 40px);
+    max-width: 100%;
+  }
+  section.content .product-content .about-image .cta-block {
+    margin-top: 50px;
+  }
+}

@@ -1,0 +1,194 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -15px;
+  margin-bottom: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header > * {
+  margin: 0 15px;
+}
+header .logo-block {
+  position: relative;
+}
+header .logo-block .logo {
+  width: 10rem;
+  height: 10rem;
+}
+header .logo-block .social-media {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding-top: 40px;
+  z-index: 10;
+}
+header .logo-block .social-media .network-icon {
+  display: block;
+}
+header .nav ul.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -10px;
+}
+header .nav ul.menu > * {
+  margin: 0 10px;
+}
+header .nav ul.menu li {
+  font-family: Montserrat;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.025rem;
+  color: #040404;
+  position: relative;
+}
+header .nav ul.menu li.current-menu-item::after {
+  content: "";
+  display: block;
+  height: 9px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+header .phone-block a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .phone-block a > * {
+  margin: 0 5px;
+}
+header .phone-block a .phone-number {
+  font-family: Fira Sans;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.03rem;
+  color: #f8fcfe;
+}
+header .account-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .account-buttons > * {
+    margin: 0 8px;
+}
+.header-block {
+  position: relative;
+}
+.header-block .left {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 36.927%;
+  background-color: #1e252b;
+}
+.header-block .left .full-screen-block {
+  width: 100vw;
+}
+.header-block .left header .nav ul.menu li {
+  color: #fcfeff;
+}
+.header-block .right {
+  width: 100vw;
+  padding-bottom: 30px;
+  padding-top: 40px;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.header-block .right header .phone-block a .phone-number {
+  color: #070707;
+}
+.header-block .right header .account-buttons .line-btn {
+  color: #030303;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.header-block .right header .account-buttons .line-btn:hover {
+  color: #fff;
+}
+@media screen and (max-device-width: 500px) {
+  .header-block .left {
+    width: 100%;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header > *:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  header .logo-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .logo-block .social-media {
+    margin-left: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+  }
+  header .logo-block .social-media > *:not(:last-child) {
+    margin-right: 10px;
+  }
+}

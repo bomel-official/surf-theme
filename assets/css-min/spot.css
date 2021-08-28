@@ -1,0 +1,93 @@
+section.content {
+  padding: 90px 0;
+}
+section.content h1 {
+  font-family: Montserrat;
+  font-size: 4.8rem;
+  font-weight: bold;
+  letter-spacing: 0.12rem;
+  text-align: left;
+  color: #040404;
+  margin-bottom: 6.5rem;
+}
+section.content .spot-content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -30px;
+}
+section.content .spot-content-block .left {
+  max-width: 646px;
+}
+section.content .spot-content-block .left .buttons-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px;
+  margin-bottom: 3.5rem;
+}
+section.content .spot-content-block .left .buttons-block > a {
+  max-width: calc(50% - 30px);
+  width: 250px;
+}
+section.content .spot-content-block .left .buttons-block .fill-btn {
+  max-width: 100%;
+  width: 250px;
+}
+section.content .spot-content-block .left .buttons-block > * {
+  margin: 0 15px;
+}
+section.content .spot-content-block .left .location-image {
+  padding-bottom: 66%;
+  position: relative;
+}
+section.content .spot-content-block .left .location-image .image-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+section.content .spot-content-block .right {
+  max-width: 515px;
+  text-align: left;
+}
+section.content .spot-content-block .right h3 {
+  font-family: Montserrat;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #060606;
+  line-height: 1.64;
+  letter-spacing: normal;
+  margin-bottom: 2rem;
+}
+section.content .spot-content-block .right .about-text {
+  font-family: Montserrat;
+  font-size: 1.4rem;
+  line-height: 1.64;
+  color: #030303;
+}
+section.content .spot-content-block > * {
+  margin: 0 30px;
+  width: calc(50% - 60px);
+}
+@media screen and (max-device-width: 500px) {
+  section.content .spot-content-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.content .spot-content-block .left,
+  section.content .spot-content-block .right {
+    width: calc(100% - 40px);
+  }
+  section.content .spot-content-block .right {
+    margin-top: 40px;
+  }
+}

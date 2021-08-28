@@ -1,0 +1,226 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.first {
+  min-height: calc((100vh - 90px) - 20rem);
+  background-position: center center;
+  background-size: cover;
+  padding: 40px 0 8rem;
+}
+.first .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: calc((100vh - 130px) - 30rem);
+}
+.first header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -15px;
+  margin-bottom: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.first header > * {
+  margin: 0 15px;
+}
+.first header .logo-block {
+  position: relative;
+}
+.first header .logo-block .logo {
+  width: 10rem;
+  height: 10rem;
+}
+.first header .logo-block .social-media {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding-top: 40px;
+}
+.first header .logo-block .social-media .network-icon {
+  display: block;
+}
+.first header .nav ul.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -10px;
+}
+.first header .nav ul.menu > * {
+  margin: 0 10px;
+}
+.first header .nav ul.menu li {
+  font-family: Montserrat;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.025rem;
+  color: #040404;
+  position: relative;
+}
+.first header .nav ul.menu li.current-menu-item::after {
+  content: "";
+  display: block;
+  height: 9px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.first header .phone-block a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.first header .phone-block a > * {
+  margin: 0 5px;
+}
+.first header .phone-block a .phone-number {
+  font-family: Fira Sans;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.03rem;
+  color: #040404;
+}
+.first header .account-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.first header .account-buttons > * {
+  margin: 0 8px;
+}
+.first .search-form {
+  margin: auto auto 0 auto;
+  border-radius: 10px;
+  border: solid 1px #000000;
+  background-color: #ffffff;
+  width: 74%;
+}
+.first .search-form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -20px;
+}
+.first .search-form > div > * {
+  margin: 0 20px;
+}
+.first .search-form > div #s {
+  max-width: 200px;
+  padding: 1rem 2.5rem;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-style: italic;
+  font-family: Corbel;
+  letter-spacing: 0.02rem;
+  text-align: left;
+  color: #040404;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.first .search-form > div #searchsubmit {
+  border-radius: 10px;
+  margin: -1px 0;
+  border: solid 1px #000000;
+  background-color: #ffd77f;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  padding: .5rem 2rem;
+}
+.first .search-form > div #searchsubmit .search-icon {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+.first .search-form > div #searchsubmit:hover {
+  background-color: #EAC575;
+}
+@media screen and (max-device-width: 500px) {
+  .container {
+    width: 100%;
+    max-width: 1540px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .first header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .first header > *:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .first header .logo-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .first header .logo-block .social-media {
+    margin-left: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: static;
+    -webkit-transform: none;
+    transform: none;
+  }
+  .first header .logo-block .social-media > *:not(:last-child) {
+    margin-right: 10px;
+  }
+  .first .search-form {
+    width: 100%;
+  }
+  .first .search-form > div .input {
+    padding: 15px;
+  }
+  .first .search-form > div .input .search-input {
+    max-width: 70px;
+    min-width: 70px;
+  }
+  .first .search-form > div {
+    margin: 0 -5px;
+  }
+  .first .search-form > div > * {
+    margin: 0 5px;
+  }
+}
